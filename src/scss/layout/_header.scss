@@ -1,0 +1,120 @@
+.openMenu {
+    overflow: hidden;
+    .nav {
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+header {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: $headerH-pc;
+    background: #fff;
+    @include mediaquery(null, 575px) {
+        height: $headerH-mo;
+    }
+}
+.header {
+    max-width: $maxwidth;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $headerH-pc;
+    padding: 0 47px 0 21px;
+    @include mediaquery(576px, 1200px) {
+        padding: 0 20px;
+    }
+    @include mediaquery(null, 575px) {
+        padding: 0 20px;
+        height: $headerH-mo;
+    }
+}
+.header__home {
+    picture {
+        display: block;
+        max-width: 146px;
+        margin-top: 3px;
+        @include mediaquery(null, 575px) {
+            width: 130px;
+            margin-top: 4px;
+        }
+    }
+}
+.nav {
+    @include mediaquery(null, 767px) {
+        opacity: 0;
+        pointer-events: none;
+    }
+    > ul {
+        display: flex;
+        align-items: center;
+        @include mediaquery(null, 767px) {
+            flex-direction: column;
+            align-items: start;
+            background: #fff;
+            width: calc(100vw + 1px);
+            position: absolute;
+            top: 60px;
+            left: -1px;
+            padding: 0 20px;
+        }
+    }
+}
+.nav-list {
+    font-family: "Noto Sans TC";
+    font-size: 18px;
+    letter-spacing: 1.75px;
+    margin: 0 30px 5px 0;
+    transition: opacity 0.75s ease;
+    @include mediaquery(768px, 1200px) {
+        margin-right: 20px;
+    }
+    @include mediaquery(768px, null) {
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    @include mediaquery(null, 767px) {
+        margin: 0;
+        width: 100%;
+        line-height: 2.6;
+        border-bottom: 1px solid #897b36;
+        &:last-child {
+            border: none;
+        }
+        a {
+            display: block;
+        }
+    }
+}
+.nav-icon {
+    ul {
+        display: flex;
+        align-items: center;
+        @include mediaquery(null, 767px) {
+            margin-top: 7px;
+            line-height: 2.6;
+        }
+    }
+    li {
+        width: 24px;
+        margin-right: 10px;
+        margin-top: 2px;
+        transition: opacity 0.75s ease;
+        &:last-child {
+            margin-right: 0;
+        }
+        @include mediaquery(768px, null) {
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+}

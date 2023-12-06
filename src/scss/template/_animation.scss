@@ -1,0 +1,276 @@
+
+.animated.fadeInLeft {
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-50px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.animated.fadeInRight {
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(50px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+.animated.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: .25s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.animated.fadeUp {
+    animation-name: fadeUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translate(0,50px,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0,0,0);
+    }
+}
+.animated.fadeUp2 {
+    animation-name: fadeUp2;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes fadeUp2 {
+    from {
+        opacity: 0;
+        transform: translateY(-40%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+}
+.animated.fadeUp3 {
+    animation-name: fadeUp3;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes fadeUp3 {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animated.fadeInTop {
+    animation-name: fadeInTop;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes fadeInTop {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.animated.fadeInTop-img {
+    animation-name: fadeInTop-img;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes fadeInTop-img {
+    from {
+        opacity: 0;
+        transform: scale(0) translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateX(-50%);
+    }
+}
+
+.animated.fadeRotate {
+    animation-name: fadeRotate;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes fadeRotate {
+    from {
+        opacity: 0;
+        transform: rotateY(90deg) translateX(-50%);
+        
+    }
+    to {
+        opacity: 1;
+        transform: rotateY(0deg) translateX(-50%);
+    }
+}
+
+.animated.fadebrand {
+    animation-name: fadebrand;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes fadebrand {
+    0% {
+        opacity: 0;
+        transform: rotateY(180deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+
+.animated.fadeRotate-img {
+    animation-name: fadeRotate-img;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: .25s;
+}
+@keyframes fadeRotate-img {
+    from {
+        opacity: 0;
+        transform: rotateY(180deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+
+
+.asj[data-delay="100"]{
+    animation-delay: 0.1s;
+}
+.asj[data-delay="200"]{
+    animation-delay: 0.2s;
+}
+.asj[data-delay="300"]{
+    animation-delay: 0.3s;
+}
+.asj[data-delay="400"]{
+    animation-delay: 0.4s;
+}
+.asj[data-delay="500"]{
+    animation-delay: 0.5s;
+}
+.asj[data-delay="600"]{
+    animation-delay: 0.6s;
+}
+.asj[data-delay="700"]{
+    animation-delay: 0.7s;
+}
+.asj[data-delay="800"]{
+    animation-delay: 0.8s;
+}
+.asj[data-delay="900"]{
+    animation-delay: 0.9s;
+}
+.asj[data-delay="1000"]{
+    animation-delay: 1s;
+}
+.asj[data-delay="1200"]{
+    animation-delay: 1.2s;
+}
+.asj[data-delay="1300"]{
+    animation-delay: 1.3s;
+}
+.asj[data-delay="1400"]{
+    animation-delay: 1.4s;
+}
+.asj[data-delay="1600"]{
+    animation-delay: 1.6s;
+}
+.asj[data-delay="1800"]{
+    animation-delay: 1.8s;
+}
+
+@keyframes opacity {
+    to {
+        opacity: 1;
+    }
+}
+@keyframes stroke {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes circle-star {
+    0% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+@keyframes scroll {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    70% {    
+        opacity: 1;    
+    }
+    100% {    
+        opacity: 0;    
+        transform: translate(-50%, 105px);
+    }
+}
+@keyframes scroll-s {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    70% {    
+        opacity: 1;    
+    }
+    100% {    
+        opacity: 0;    
+        transform: translate(-50%, 40px);
+    }
+}

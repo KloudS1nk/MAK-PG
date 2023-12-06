@@ -1,0 +1,22 @@
+$font: "Noto Sans TC", sans-serif;
+$font-jp: "Noto Serif JP", serif;
+$font-mix: "Noto Sans", "Noto Sans TC", sans-serif;
+$font-amiri: "Amiri", serif;
+$font-roboto: "Roboto", sans-serif;
+
+$maxwidth: 1440px;
+$headerH-pc: 0px;
+$headerH-mo: 0px;
+//----------- color ------------//
+
+// $primary-color: #1f4499;
+// $secondary-color: #3b3b3b;
+
+//----------- RWD break ------------//
+
+$xxl: 1440px;
+$xl: 1200px;
+$lg: 991px;
+$md: 769px;
+$sm: 576px;
+$xs: 480px;

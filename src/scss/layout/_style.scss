@@ -1,0 +1,26 @@
+.title{
+    font-size: 32px;
+    font-weight: 600;
+    color: $primary-color;
+    @include mediaquery(768px, 1050px){
+        font-size: 3.25vw;
+    }
+    @include mediaquery(null, 767px){
+        font-size: 7vw;
+    }
+}
+.subtitle{
+    font-size: 16px;
+    color: #3b3b3b;
+    margin-bottom: 0.9em;
+    @include mediaquery(768px, 1050px){
+        font-size: 1.5vw;
+    }
+    @include mediaquery(null, 767px){
+        margin-bottom: 2vw;
+        font-size: 3.6vw;
+    }
+}
+
+
+

@@ -1,0 +1,1571 @@
+@import "base/mixin";
+@import "base/variable";
+
+@include mediaquery(768px, null) {
+}
+@include mediaquery(null, 767px) {
+}
+* {
+    font-family: jf-openhuninn;
+}
+picture {
+    display: block;
+    img {
+        display: block;
+    }
+}
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+}
+section {
+    overflow: hidden;
+}
+.section_1 {
+    position: relative;
+    .tag-img {
+        position: absolute;
+        top: 5.5%;
+        left: 4.5%;
+        @include mediaquery(768px, null) {
+            img {
+                width: 100%;
+            }
+        }
+        @include mediaquery(null, 767px) {
+            img {
+                width: 17.861vw;
+            }
+        }
+    }
+    .s1-text-1 {
+        position: absolute;
+        // left: 53%;
+        width: 100%;
+        text-align: center;
+        @include mediaquery(768px, null) {
+            top: 13.5%;
+        }
+        @include mediaquery(null, 767px) {
+            top: 15%;
+        }
+        span {
+            font-weight: 900;
+            font-family: jf-jinxuanlatte;
+            color: transparent;
+            background-image: linear-gradient(
+                to bottom right,
+                #9a6f19,
+                #9a6f19,
+                #c89c5f,
+                #9a6f19,
+                #c89c5f,
+                #9a6f19,
+                #9a6f19
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            @include mediaquery(768px, null) {
+                font-size: 65px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 8.474vw;
+            }
+            &:nth-child(1) {
+                z-index: 2;
+                position: relative;
+                // letter-spacing: 0.05em;
+                &:after {
+                    content: "Ichiban純水";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 120%;
+                    height: 100%;
+                    @include mediaquery(768px, null) {
+                        -webkit-text-stroke: 6px white;
+                        text-stroke: 6px white;
+                    }
+                    @include mediaquery(null, 767px) {
+                        -webkit-text-stroke: 0.781vw white;
+                        text-stroke: 0.781vw white;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                z-index: 2;
+                position: relative;
+                // letter-spacing: 0.04em;
+                &:after {
+                    content: "款濕紙巾";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 120%;
+                    height: 100%;
+                    @include mediaquery(768px, null) {
+                        -webkit-text-stroke: 6px white;
+                        text-stroke: 6px white;
+                    }
+                    @include mediaquery(null, 767px) {
+                        -webkit-text-stroke: 0.781vw white;
+                        text-stroke: 0.781vw white;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                display: inline-block;
+                position: relative;
+                font-weight: 900;
+                @include mediaquery(768px, null) {
+                    width: 10px;
+                    height: 55px;
+                }
+                @include mediaquery(null, 767px) {
+                    width: 1.303vw;
+                    height: 7.17vw;
+                }
+                &::after {
+                    content: "*";
+                    position: absolute;
+                    left: -35%;
+                    color: #9a6f19;
+                    @include mediaquery(768px, null) {
+                        font-size: 20px;
+                        top: -5%;
+                    }
+                    @include mediaquery(null, 767px) {
+                        font-size: 3.604vw;
+                        top: -6%;
+                    }
+                }
+                &::before {
+                    content: "*";
+                    position: absolute;
+                    top: -5%;
+                    left: -35%;
+                    color: #9a6f19;
+                    @include mediaquery(768px, null) {
+                        font-size: 20px;
+                        -webkit-text-stroke: 6px white;
+                        text-stroke: 6px white;
+                    }
+                    @include mediaquery(null, 767px) {
+                        font-size: 2.604vw;
+                        -webkit-text-stroke: 0.781vw white;
+                        text-stroke: 0.781vw white;
+                    }
+                }
+            }
+        }
+    }
+    .s1-text-2 {
+        position: absolute;
+        width: 90%;
+        left: 18.7%;
+        @include mediaquery(768px, null) {
+            top: 23.5%;
+        }
+        @include mediaquery(null, 767px) {
+            top: 25%;
+        }
+        span {
+            font-weight: 700;
+            color: #00737b;
+            @include mediaquery(768px, null) {
+                font-size: 56px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 7.301vw;
+            }
+            &:nth-child(1) {
+                @include mediaquery(768px, null) {
+                    margin-right: 30px;
+                }
+                @include mediaquery(null, 767px) {
+                    margin-right: 3.911vw;
+                }
+                &::after {
+                    content: "#";
+                    position: absolute;
+                    top: 6%;
+                    color: #00737b;
+                    @include mediaquery(768px, null) {
+                        font-size: 18px;
+                        left: 32%;
+                    }
+                    @include mediaquery(null, 767px) {
+                        font-size: 2.346vw;
+                        left: 33.5%;
+                    }
+                }
+            }
+        }
+    }
+    .s1-text-3 {
+        position: absolute;
+        width: 90%;
+        top: 89.3%;
+        left: 2%;
+        span {
+            display: block;
+            line-height: 0.7;
+            font-weight: 400;
+            color: #00737b;
+            margin: 4px 0;
+            @include mediaquery(768px, null) {
+                font-size: 12.5px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 1.629vw;
+            }
+        }
+    }
+    .tr-text-1 {
+        position: absolute;
+        top: 4%;
+        right: 2%;
+        color: transparent;
+        text-align: center;
+        @include mediaquery(768px, null) {
+            font-size: 20px;
+        }
+        @include mediaquery(null, 767px) {
+            font-size: 2.6vw;
+        }
+    }
+    .tr-text-2 {
+        position: absolute;
+        top: 51%;
+        right: 34%;
+        color: transparent;
+        text-align: center;
+        @include mediaquery(768px, null) {
+            font-size: 20px;
+        }
+        @include mediaquery(null, 767px) {
+            font-size: 2.6vw;
+        }
+    }
+    .tr-text-3 {
+        position: absolute;
+        top: 51%;
+        right: 8%;
+        color: transparent;
+        text-align: center;
+        @include mediaquery(768px, null) {
+            font-size: 20px;
+        }
+        @include mediaquery(null, 767px) {
+            font-size: 2.6vw;
+        }
+    }
+}
+.section_2 {
+    position: relative;
+    .s2-text-1 {
+        position: absolute;
+        top: 14%;
+        left: 25%;
+        span {
+            letter-spacing: 0.05em;
+            font-weight: 900;
+            font-family: jf-jinxuanlatte;
+            color: transparent;
+            background-image: linear-gradient(
+                to bottom right,
+                #9a6f19,
+                #9a6f19,
+                #c89c5f,
+                #9a6f19,
+                #c89c5f,
+                #9a6f19,
+                #9a6f19
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            @include mediaquery(768px, null) {
+                font-size: 51.47px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 6.71vw;
+            }
+            &:first-child {
+                z-index: 2;
+                position: relative;
+                &:after {
+                    content: "P&G正貨零售點";
+                    position: absolute;
+                    width: 120%;
+                    text-align: center;
+                    z-index: -1;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    @include mediaquery(768px, null) {
+                        -webkit-text-stroke: 6px white;
+                        text-stroke: 6px white;
+                    }
+                    @include mediaquery(null, 767px) {
+                        -webkit-text-stroke: 0.781vw white;
+                        text-stroke: 0.781vw white;
+                    }
+                }
+            }
+        }
+    }
+    .retailers-wrap {
+        position: absolute;
+        top: 31.2%;
+        left: 50%;
+        transform: translateX(-50%);
+        @include mediaquery(768px, null) {
+            width: 572px;
+        }
+        @include mediaquery(null, 767px) {
+            width: 74.576vw;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li {
+            transition: 0.5s;
+            @include mediaquery(768px, null) {
+                width: 278px;
+                height: 78px;
+                border-radius: 28px;
+                margin-top: 24px;
+                border: 3px solid #008c96;
+            }
+            @include mediaquery(null, 767px) {
+                width: 36.245vw;
+                height: 10.169vw;
+                border-radius: 3.65vw;
+                margin-top: 3.129vw;
+                border: 0.391vw solid #008c96;
+            }
+            a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    display: block;
+                }
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+            &:nth-child(1) {
+                background-color: #005ad6;
+                @include mediaquery(768px, null) {
+                    img {
+                        width: 100%;
+                    }
+                }
+                @include mediaquery(null, 767px) {
+                    img {
+                        width: 24.25vw;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                background-color: #0098a7;
+                @include mediaquery(768px, null) {
+                    img {
+                        width: 100%;
+                    }
+                }
+                @include mediaquery(null, 767px) {
+                    img {
+                        width: 25.162vw;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                display: none;
+                background-color: #e40032;
+                @include mediaquery(768px, null) {
+                    img {
+                        width: 100%;
+                    }
+                }
+                @include mediaquery(null, 767px) {
+                    img {
+                        width: 29.204vw;
+                    }
+                }
+            }
+            &:nth-child(4) {
+                background-color: white;
+                a {
+                    margin-left: 3%;
+                    margin-top: -1%;
+                    @include mediaquery(768px, null) {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    @include mediaquery(null, 767px) {
+                        img {
+                            width: 26.336vw;
+                        }
+                    }
+                }
+            }
+            &:nth-child(5) {
+                background-color: white;
+                @include mediaquery(768px, null) {
+                    img {
+                        width: 100%;
+                    }
+                }
+                @include mediaquery(null, 767px) {
+                    img {
+                        width: 14.863vw;
+                    }
+                }
+            }
+        }
+    }
+}
+.section_3 {
+    position: relative;
+    .s3-text-1 {
+        position: absolute;
+        top: 7%;
+        left: 15.3%;
+        span {
+            letter-spacing: 0.04em;
+            font-weight: 700;
+            font-family: jf-jinxuanlatte;
+            color: transparent;
+            background-image: linear-gradient(
+                to bottom right,
+                #9a6f19,
+                #9a6f19,
+                #c89c5f,
+                #9a6f19,
+                #c89c5f,
+                #9a6f19,
+                #9a6f19
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            @include mediaquery(768px, null) {
+                font-size: 66px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 8.604vw;
+            }
+            &:nth-child(1) {
+                z-index: 2;
+                position: relative;
+                &:after {
+                    content: "純水";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    @include mediaquery(768px, null) {
+                        -webkit-text-stroke: 6px white;
+                        text-stroke: 6px white;
+                    }
+                    @include mediaquery(null, 767px) {
+                        -webkit-text-stroke: 0.781vw white;
+                        text-stroke: 0.781vw white;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                z-index: 2;
+                position: relative;
+                &:after {
+                    content: "8道過濾工法";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    @include mediaquery(768px, null) {
+                        -webkit-text-stroke: 6px white;
+                        text-stroke: 6px white;
+                    }
+                    @include mediaquery(null, 767px) {
+                        -webkit-text-stroke: 0.781vw white;
+                        text-stroke: 0.781vw white;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                display: inline-block;
+                position: relative;
+                @include mediaquery(768px, null) {
+                    width: 5px;
+                    height: 55px;
+                }
+                @include mediaquery(null, 767px) {
+                    width: 0.651vw;
+                    height: 7.17vw;
+                }
+                &::after {
+                    content: "*";
+                    position: absolute;
+                    top: -12%;
+                    left: 35%;
+                    transform: translateX(-50%);
+                    color: #9a6f19;
+                    @include mediaquery(768px, null) {
+                        font-size: 20px;
+                    }
+                    @include mediaquery(null, 767px) {
+                        font-size: 2.607vw;
+                    }
+                }
+                &::before {
+                    content: "*";
+                    position: absolute;
+                    top: -12%;
+                    left: 35%;
+                    transform: translateX(-50%);
+                    color: #9a6f19;
+                    @include mediaquery(768px, null) {
+                        font-size: 20px;
+                        -webkit-text-stroke: 6px white;
+                        text-stroke: 6px white;
+                    }
+                    @include mediaquery(null, 767px) {
+                        font-size: 2.607vw;
+                        -webkit-text-stroke: 0.781vw white;
+                        text-stroke: 0.781vw white;
+                    }
+                }
+            }
+        }
+    }
+    .s3-text-2 {
+        position: absolute;
+        width: 90%;
+        top: 91.7%;
+        left: 2%;
+        span {
+            margin: 5px 0;
+            display: block;
+            line-height: 0.7;
+            font-weight: 400;
+            color: #00737b;
+            @include mediaquery(768px, null) {
+                font-size: 12.5px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 1.629vw;
+            }
+        }
+    }
+    .tr-text-1 {
+        position: absolute;
+        top: 54%;
+        right: 40%;
+        color: transparent;
+        text-align: center;
+        @include mediaquery(768px, null) {
+            font-size: 40px;
+        }
+        @include mediaquery(null, 767px) {
+            font-size: 5.2vw;
+        }
+    }
+    .tr-text-2 {
+        position: absolute;
+        top: 38%;
+        right: 24%;
+        color: transparent;
+        text-align: center;
+        @include mediaquery(768px, null) {
+            font-size: 40px;
+        }
+        @include mediaquery(null, 767px) {
+            font-size: 5.2vw;
+        }
+    }
+}
+.section_4 {
+    position: relative;
+    .s4-text-1 {
+        position: absolute;
+        width: 90%;
+        top: 73.8%;
+        left: 5%;
+        span {
+            font-weight: 400;
+            color: #007982;
+            line-height: 1.1;
+            @include mediaquery(768px, null) {
+                font-size: 28px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 3.65vw;
+            }
+            &:nth-child(2) {
+                display: inline-block;
+                position: relative;
+                @include mediaquery(768px, null) {
+                    width: 10px;
+                    height: 28px;
+                }
+                @include mediaquery(null, 767px) {
+                    width: 1.303vw;
+                    height: 3.65vw;
+                }
+                &::after {
+                    content: "~";
+                    position: absolute;
+                    top: -18%;
+                    left: -34%;
+                    transform: translateX(-50%);
+                    color: #007982;
+                    @include mediaquery(768px, null) {
+                        font-size: 20px;
+                    }
+                    @include mediaquery(null, 767px) {
+                        font-size: 2.607vw;
+                    }
+                }
+            }
+        }
+    }
+    .s4-text-2 {
+        position: absolute;
+        width: 90%;
+        top: 93%;
+        left: 2%;
+        span {
+            font-weight: 400;
+            line-height: 0.7;
+            color: #3a6d68;
+            @include mediaquery(768px, null) {
+                font-size: 12.5px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 1.629vw;
+            }
+        }
+    }
+}
+.section_5 {
+    position: relative;
+    .s5-text-1 {
+        position: absolute;
+        width: 90%;
+        left: 10.2%;
+        @include mediaquery(768px, null) {
+            top: 39.3%;
+        }
+        @include mediaquery(null, 767px) {
+            top: 39%;
+        }
+        span {
+            letter-spacing: 0.02em;
+            font-weight: 900;
+            font-family: jf-jinxuanlatte;
+            color: transparent;
+            background-image: linear-gradient(
+                to bottom right,
+                #9a6f19,
+                #9a6f19,
+                #c89c5f,
+                #9a6f19,
+                #c89c5f,
+                #9a6f19,
+                #9a6f19
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            @include mediaquery(768px, null) {
+                font-size: 66px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 8.604vw;
+            }
+            &:nth-child(1) {
+                z-index: 2;
+                position: relative;
+                &:after {
+                    content: "手口";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 120%;
+                    height: 100%;
+                    text-align: center;
+                    @include mediaquery(768px, null) {
+                        -webkit-text-stroke: 6px white;
+                        text-stroke: 6px white;
+                    }
+                    @include mediaquery(null, 767px) {
+                        -webkit-text-stroke: 0.781vw white;
+                        text-stroke: 0.781vw white;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                z-index: 2;
+                position: relative;
+                &:after {
+                    content: "安心使用好便利";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 120%;
+                    height: 100%;
+                    text-align: center;
+                    @include mediaquery(768px, null) {
+                        -webkit-text-stroke: 6px white;
+                        text-stroke: 6px white;
+                    }
+                    @include mediaquery(null, 767px) {
+                        -webkit-text-stroke: 0.781vw white;
+                        text-stroke: 0.781vw white;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                position: relative;
+                @include mediaquery(768px, null) {
+                    width: 10px;
+                    height: 55px;
+                }
+                @include mediaquery(null, 767px) {
+                    width: 1.303vw;
+                    height: 7.17vw;
+                }
+                &::after {
+                    content: "#";
+                    position: absolute;
+                    top: 0;
+                    left: 35%;
+                    transform: translateX(-50%);
+                    color: #9a6f19;
+                    @include mediaquery(768px, null) {
+                        font-size: 12.5px;
+                    }
+                    @include mediaquery(null, 767px) {
+                        font-size: 1.629vw;
+                    }
+                }
+                &::before {
+                    content: "#";
+                    position: absolute;
+                    top: 0;
+                    left: 35%;
+                    transform: translateX(-50%);
+                    color: #9a6f19;
+                    @include mediaquery(768px, null) {
+                        font-size: 12.5px;
+                        -webkit-text-stroke: 6px white;
+                        text-stroke: 6px white;
+                    }
+                    @include mediaquery(null, 767px) {
+                        font-size: 1.629vw;
+                        -webkit-text-stroke: 0.781vw white;
+                        text-stroke: 0.781vw white;
+                    }
+                }
+            }
+        }
+    }
+    .s5-text-2 {
+        position: absolute;
+        width: 90%;
+        top: 96.7%;
+        left: 2%;
+        span {
+            line-height: 0.7;
+            font-weight: 400;
+            color: #00737b;
+            @include mediaquery(768px, null) {
+                font-size: 12.5px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 1.629vw;
+            }
+        }
+    }
+}
+.section_6 {
+    position: relative;
+    .s6-text-1 {
+        position: absolute;
+        width: 90%;
+        top: 16.8%;
+        left: 57.5%;
+        span {
+            font-weight: 700;
+            font-family: jf-jinxuanlatte;
+            color: transparent;
+            background-image: linear-gradient(
+                to bottom right,
+                #9a6f19,
+                #9a6f19,
+                #c89c5f,
+                #9a6f19,
+                #c89c5f,
+                #9a6f19,
+                #9a6f19
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            @include mediaquery(768px, null) {
+                font-size: 54px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 7.04vw;
+            }
+            &:nth-child(1) {
+                position: relative;
+                z-index: 2;
+                &:after {
+                    content: "超強靭";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    @include mediaquery(768px, null) {
+                        -webkit-text-stroke: 6px white;
+                        text-stroke: 6px white;
+                    }
+                    @include mediaquery(null, 767px) {
+                        -webkit-text-stroke: 0.781vw white;
+                        text-stroke: 0.781vw white;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                z-index: 2;
+                margin-left: 3%;
+                position: relative;
+                &:after {
+                    content: "潔淨";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    @include mediaquery(768px, null) {
+                        -webkit-text-stroke: 6px white;
+                        text-stroke: 6px white;
+                    }
+                    @include mediaquery(null, 767px) {
+                        -webkit-text-stroke: 0.781vw white;
+                        text-stroke: 0.781vw white;
+                    }
+                }
+            }
+        }
+    }
+    .s6-text-2 {
+        position: absolute;
+        width: 90%;
+        top: 30%;
+        left: 66%;
+        span {
+            line-height: 1.2;
+            font-weight: 500;
+            color: #008c96;
+            font-family: jf-openhuninn;
+            @include mediaquery(768px, null) {
+                font-size: 40px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 5.215vw;
+            }
+        }
+    }
+}
+.section_7 {
+    position: relative;
+    .s7-circle-text {
+        position: absolute;
+        border-radius: 50%;
+        background-color: white;
+
+        top: 26.8%;
+        left: 68.5%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include mediaquery(768px, null) {
+            width: 147px;
+            height: 147px;
+        }
+        @include mediaquery(null, 767px) {
+            width: 19.165vw;
+            height: 19.165vw;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            @include mediaquery(768px, null) {
+                box-shadow: 3px 3px 5px rgba(92, 92, 92, 0.5);
+            }
+            @include mediaquery(null, 767px) {
+                box-shadow: 0.391vw 0.391vw 0.651vw rgba(92, 92, 92, 0.5);
+            }
+        }
+        span {
+            font-weight: 700;
+            font-family: jf-jinxuanlatte;
+            color: transparent;
+            background-image: linear-gradient(
+                to bottom right,
+                #9a6f19,
+                #9a6f19,
+                #c89c5f,
+                #9a6f19,
+                #c89c5f,
+                #9a6f19,
+                #9a6f19
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            @include mediaquery(768px, null) {
+                font-size: 54px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 7.04vw;
+            }
+            &:nth-child(1) {
+                position: relative;
+                &:after {
+                    content: "厚手";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    @include mediaquery(768px, null) {
+                        -webkit-text-stroke: 6px white;
+                        text-stroke: 6px white;
+                    }
+                    @include mediaquery(null, 767px) {
+                        -webkit-text-stroke: 0.781vw white;
+                        text-stroke: 0.781vw white;
+                    }
+                }
+            }
+        }
+    }
+    .s7-text-1 {
+        position: absolute;
+        top: 55%;
+        left: 64.5%;
+        span {
+            line-height: 1.2;
+            font-weight: 700;
+            font-family: jf-jinxuanlatte;
+            color: transparent;
+            background-image: linear-gradient(
+                to bottom right,
+                #9a6f19,
+                #9a6f19,
+                #c89c5f,
+                #9a6f19,
+                #c89c5f,
+                #9a6f19,
+                #9a6f19
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            @include mediaquery(768px, null) {
+                font-size: 54px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 7.031vw;
+            }
+            &:nth-child(1) {
+                position: relative;
+                z-index: 2;
+                &:after {
+                    content: "材質來自";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    left: 0;
+                    @include mediaquery(768px, null) {
+                        -webkit-text-stroke: 6px white;
+                        text-stroke: 6px white;
+                    }
+                    @include mediaquery(null, 767px) {
+                        -webkit-text-stroke: 0.781vw white;
+                        text-stroke: 0.781vw white;
+                    }
+                }
+            }
+            &:last-child {
+                position: relative;
+                z-index: 2;
+                &:after {
+                    content: "植物纖維";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    left: 0;
+                    @include mediaquery(768px, null) {
+                        -webkit-text-stroke: 6px white;
+                        text-stroke: 6px white;
+                    }
+                    @include mediaquery(null, 767px) {
+                        -webkit-text-stroke: 0.781vw white;
+                        text-stroke: 0.781vw white;
+                    }
+                }
+            }
+        }
+    }
+    .s7-text-2 {
+        position: absolute;
+        // width: 90%;
+        top: 79.4%;
+        left: 68.4%;
+        span {
+            line-height: 1;
+            font-weight: 400;
+            color: #008c96;
+            font-family: jf-openhuninn;
+            @include mediaquery(768px, null) {
+                font-size: 40px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 5.215vw;
+            }
+        }
+    }
+}
+.section_8 {
+    position: relative;
+    .s8-text-1 {
+        position: absolute;
+        top: 87.8%;
+        width: 100%;
+        text-align: center;
+        span {
+            letter-spacing: 0.02em;
+            font-weight: 700;
+            font-family: jf-jinxuanlatte;
+            color: transparent;
+            background-image: linear-gradient(
+                to bottom right,
+                #9a6f19,
+                #9a6f19,
+                #c89c5f,
+                #9a6f19,
+                #c89c5f,
+                #9a6f19,
+                #9a6f19
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            @include mediaquery(768px, null) {
+                font-size: 54px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 7.031vw;
+            }
+            &:first-child {
+                z-index: 2;
+                position: relative;
+                &:after {
+                    content: "呵護初感肌";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    left: 0;
+                    @include mediaquery(768px, null) {
+                        -webkit-text-stroke: 6px white;
+                        text-stroke: 6px white;
+                    }
+                    @include mediaquery(null, 767px) {
+                        -webkit-text-stroke: 0.781vw white;
+                        text-stroke: 0.781vw white;
+                    }
+                }
+            }
+        }
+    }
+    .s8-text-2 {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        @include mediaquery(768px, null) {
+            top: 80.5%;
+        }
+        @include mediaquery(null, 767px) {
+            top: 79%;
+        }
+        span {
+            word-break: keep-all;
+            line-height: 1;
+            font-weight: 700;
+            color: #008c96;
+            font-family: jf-jinxuanlatte;
+            @include mediaquery(768px, null) {
+                font-size: 40px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 5.208vw;
+            }
+        }
+    }
+}
+.section_10 {
+    position: relative;
+    .s10-text-1 {
+        width: 100%;
+        position: absolute;
+        top: 1.8%;
+        text-align: center;
+        span {
+            letter-spacing: 0.03em;
+            font-size: 66px;
+            font-weight: 900;
+            font-family: jf-jinxuanlatte;
+            color: transparent;
+            background-image: linear-gradient(
+                to bottom right,
+                #9a6f19,
+                #9a6f19,
+                #c89c5f,
+                #9a6f19,
+                #c89c5f,
+                #9a6f19,
+                #9a6f19
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            @include mediaquery(768px, null) {
+                font-size: 66px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 8.593vw;
+            }
+            &:nth-child(1) {
+                position: relative;
+                z-index: 2;
+                &:after {
+                    content: "Ichiban純水";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 120%;
+                    height: 100%;
+                    text-align: center;
+                    @include mediaquery(768px, null) {
+                        -webkit-text-stroke: 6px white;
+                        text-stroke: 6px white;
+                    }
+                    @include mediaquery(null, 767px) {
+                        -webkit-text-stroke: 0.781vw white;
+                        text-stroke: 0.781vw white;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                position: relative;
+                width: 1px;
+                &::after {
+                    content: "*";
+                    position: absolute;
+                    top: 5%;
+                    left: -11px;
+                    font-size: 20px;
+                    color: #9a6f19;
+                    @include mediaquery(768px, null) {
+                        font-size: 20px;
+                        left: -11px;
+                    }
+                    @include mediaquery(null, 767px) {
+                        font-size: 2.604vw;
+                        left: -1.432vw;
+                    }
+                }
+                &::before {
+                    content: "*";
+                    position: absolute;
+                    top: 5%;
+                    color: #9a6f19;
+                    @include mediaquery(768px, null) {
+                        -webkit-text-stroke: 6px white;
+                        text-stroke: 6px white;
+                        font-size: 20px;
+                        left: -11px;
+                    }
+                    @include mediaquery(null, 767px) {
+                        -webkit-text-stroke: 0.781vw white;
+                        text-stroke: 0.781vw white;
+                        font-size: 2.604vw;
+                        left: -1.432vw;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                z-index: 2;
+                position: relative;
+                &:after {
+                    content: "款濕紙巾";
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 120%;
+                    height: 100%;
+                    text-align: center;
+                    @include mediaquery(768px, null) {
+                        -webkit-text-stroke: 6px white;
+                        text-stroke: 6px white;
+                    }
+                    @include mediaquery(null, 767px) {
+                        -webkit-text-stroke: 0.781vw white;
+                        text-stroke: 0.781vw white;
+                    }
+                }
+            }
+        }
+    }
+    .s10-text-2pac {
+        position: absolute;
+        top: 83%;
+        left: 9%;
+        background-image: linear-gradient(to bottom, #cfb48f, #9a6f19, #9a6f19, #cfb48f);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include mediaquery(768px, null) {
+            width: 203px;
+            height: 40px;
+            border-radius: 20px;
+        }
+        @include mediaquery(null, 767px) {
+            width: 26.432vw;
+            height: 5.208vw;
+            border-radius: 2.604vw;
+        }
+        span {
+            background-color: white;
+            font-weight: 700;
+            color: #9a6f19;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include mediaquery(768px, null) {
+                width: 197px;
+                height: 34px;
+                border-radius: 17px;
+                font-size: 24.61px;
+                line-height: 40px;
+            }
+            @include mediaquery(null, 767px) {
+                width: 25.651vw;
+                height: 4.427vw;
+                border-radius: 2.213vw;
+                font-size: 3.204vw;
+                line-height: 5.208vw;
+                letter-spacing: -0.05em;
+            }
+            b {
+                letter-spacing: -0.06em;
+            }
+        }
+    }
+    .s10-text-12pac {
+        position: absolute;
+        top: 83%;
+        left: 53%;
+        background-image: linear-gradient(to bottom, #cfb48f, #9a6f19, #9a6f19, #cfb48f);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include mediaquery(768px, null) {
+            width: 223px;
+            height: 40px;
+            border-radius: 20px;
+        }
+        @include mediaquery(null, 767px) {
+            width: 29.036vw;
+            height: 5.208vw;
+            border-radius: 2.604vw;
+        }
+        span {
+            background-color: white;
+            font-weight: 700;
+            color: #9a6f19;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include mediaquery(768px, null) {
+                width: 217px;
+                height: 34px;
+                border-radius: 17px;
+                font-size: 24.61px;
+                line-height: 40px;
+            }
+            @include mediaquery(null, 767px) {
+                width: 28.255vw;
+                height: 4.427vw;
+                border-radius: 2.213vw;
+                font-size: 3.204vw;
+                line-height: 5.208vw;
+                letter-spacing: -0.05em;
+            }
+            b {
+                letter-spacing: -0.06em;
+            }
+        }
+    }
+    .s10-text-2 {
+        position: absolute;
+        width: 90%;
+        top: 94%;
+        left: 2%;
+        span {
+            line-height: 0.7;
+            font-weight: 400;
+            color: #00737b;
+            @include mediaquery(768px, null) {
+                font-size: 12.5px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 1.627vw;
+            }
+        }
+    }
+}
+.section_11 {
+    position: relative;
+    .s11-title {
+        position: absolute;
+        width: 100%;
+        top: 17.5%;
+        text-align: center;
+        span {
+            font-weight: 700;
+            color: #038682;
+            @include mediaquery(768px, null) {
+                font-size: 34px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 4.427vw;
+            }
+            &:nth-child(1) {
+                @include mediaquery(768px, null) {
+                    margin-right: 4px;
+                }
+                @include mediaquery(null, 767px) {
+                    margin-right: 0.52vw;
+                }
+            }
+        }
+    }
+    .info-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .qrcode {
+            position: absolute;
+            top: 39.4%;
+            left: 68.6%;
+            font-weight: 700;
+            color: #00968f;
+            @include mediaquery(768px, null) {
+                font-size: 25.5px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 3.32vw;
+            }
+        }
+        ul {
+            li {
+                &:nth-child(1) {
+                    font-weight: 900;
+                    color: #8c691d;
+                    @include mediaquery(768px, null) {
+                        font-size: 61.3px;
+                    }
+                    @include mediaquery(null, 767px) {
+                        font-size: 7.981vw;
+                    }
+                }
+                &:nth-child(2) {
+                    line-height: 0.7em;
+                    font-weight: 700;
+                    color: #027b77;
+                    @include mediaquery(768px, null) {
+                        font-size: 40.87px;
+                    }
+                    @include mediaquery(null, 767px) {
+                        font-size: 5.321vw;
+                        line-height: 1em;
+                    }
+                }
+                &:nth-child(3) {
+                    margin-top: 4%;
+                    margin-left: 0.5%;
+                    font-weight: 400;
+                    color: #027b77;
+                    @include mediaquery(768px, null) {
+                        font-size: 20px;
+                    }
+                    @include mediaquery(null, 767px) {
+                        font-size: 2.604vw;
+                        width: 120%;
+                        line-height: 1em;
+                    }
+                }
+            }
+        }
+        .info-1 {
+            position: absolute;
+            top: 27.3%;
+            left: 12.4%;
+        }
+        .info-2 {
+            position: absolute;
+            top: 48.2%;
+            left: 12.7%;
+        }
+        .info-3 {
+            position: absolute;
+            top: 82.5%;
+            left: 12.2%;
+            li {
+                &:nth-child(2) {
+                    line-height: 1.2;
+                    color: #027b77;
+                    @include mediaquery(768px, null) {
+                        font-size: 20px;
+                        margin-left: 5px;
+                    }
+                    @include mediaquery(null, 767px) {
+                        font-size: 2.604vw;
+                        margin-top: 2%;
+                        margin-left: 0.651vw;
+                    }
+                }
+            }
+        }
+    }
+
+    .s11-text-1 {
+        position: absolute;
+        width: 90%;
+        left: 2%;
+        @include mediaquery(768px, null) {
+            bottom: 0.5%;
+        }
+        @include mediaquery(null, 767px) {
+            bottom: 0.3%;
+        }
+        span {
+            line-height: 0.7;
+            font-weight: 400;
+            color: #3a6d68;
+            @include mediaquery(768px, null) {
+                font-size: 12.5px;
+            }
+            @include mediaquery(null, 767px) {
+                font-size: 1.627vw;
+            }
+        }
+    }
+    .tr-text-1 {
+        position: absolute;
+        top: 9.5%;
+        right: 39%;
+        color: transparent;
+        text-align: center;
+        @include mediaquery(768px, null) {
+            font-size: 40px;
+        }
+        @include mediaquery(null, 767px) {
+            font-size: 5.2vw;
+        }
+    }
+    .tr-text-2 {
+        position: absolute;
+        top: 70%;
+        right: 16%;
+        color: transparent;
+        text-align: center;
+        @include mediaquery(768px, null) {
+            font-size: 30px;
+        }
+        @include mediaquery(null, 767px) {
+            font-size: 3.9vw;
+        }
+    }
+    .tr-text-3 {
+        position: absolute;
+        top: 72.5%;
+        right: 66%;
+        color: transparent;
+        text-align: center;
+        @include mediaquery(768px, null) {
+            font-size: 20px;
+        }
+        @include mediaquery(null, 767px) {
+            font-size: 2.6vw;
+        }
+    }
+    .tr-text-4 {
+        position: absolute;
+        top: 72.5%;
+        right: 39%;
+        color: transparent;
+        text-align: center;
+        @include mediaquery(768px, null) {
+            font-size: 20px;
+        }
+        @include mediaquery(null, 767px) {
+            font-size: 2.6vw;
+        }
+    }
+    .tickets-img {
+        position: absolute;
+        bottom: 28.3%;
+        left: 12.5%;
+        opacity: 0;
+        picture {
+            width: 361px;
+            @include mediaquery(null, 767px) {
+                width: 47.005vw;
+            }
+        }
+    }
+}
